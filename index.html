@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobSphere </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo-block">
+                <span class="logo-icon">J</span>
+                <span class="logo-text">JobSphere</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Find Jobs</a></li>
+                <li><a href="#">Company Reviews</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#" class="btn-signin">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-search-container">
+        <form class="search-form" onsubmit="event.preventDefault();">
+            <div class="input-group">
+                <svg class="input-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                </svg>
+                <input type="text" placeholder="Job title, keywords, or company" aria-label="Job Title Search">
+            </div>
+            <div class="input-group">
+                <svg class="input-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,4A5,5 0 0,1 17,9C17,12.5 13.93,17.1 12,19.34C10.07,17.1 7,12.46 7,9A5,5 0 0,1 12,4M12,6A3,3 0 0,0 9,9A3,3 0 0,0 12,12A3,3 0 0,0 15,9A3,3 0 0,0 12,6Z"/>
+                </svg>
+                <input type="text" placeholder="City, state, or zip code" aria-label="Location Search">
+            </div>
+            <button type="submit" class="btn-search">Find Jobs</button>
+        </form>
+    </section>
+
+    <main class="dashboard-workspace">
+        
+        <aside class="filter-sidebar">
+            <div class="filter-group">
+                <h3 class="filter-header">Job Type</h3>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span> Full-time
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> Remote
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> Internship
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-header">Experience Level</h3>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> Entry Level
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> Mid-Senior Level
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> Director / Executive
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3 class="filter-header">Salary Range</h3>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> $50,000+
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> $90,000+
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span> $130,000+
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <section class="job-feed-stream">
+            
+            <article class="job-card">
+                <div class="job-card-header">
+                    <div>
+                        <h2 class="job-title">Senior UI/UX Designer</h2>
+                        <div class="company-meta">
+                            <span class="company-tag">PixelPerfect Corp</span>
+                            <span class="rating-badge">4.8 ★</span>
+                        </div>
+                        <p class="location-text">New York, NY (Hybrid)</p>
+                    </div>
+                </div>
+                <p class="job-snippet">
+                    We are seeking a visionary Senior UI/UX Designer to architect clean, accessible, and intuitive digital product workflows. Experience with scalable design systems is required...
+                </p>
+                <div class="job-card-footer">
+                    <button class="btn-apply">Apply Now</button>
+                    <span class="post-date-flag">Posted 2 days ago</span>
+                </div>
+            </article>
+
+            <article class="job-card">
+                <div class="job-card-header">
+                    <div>
+                        <h2 class="job-title">Lead Web Developer</h2>
+                        <div class="company-meta">
+                            <span class="company-tag">NovaTech Solutions</span>
+                            <span class="rating-badge">4.5 ★</span>
+                        </div>
+                        <p class="location-text">Remote / San Francisco, CA</p>
+                    </div>
+                </div>
+                <p class="job-snippet">
+                    Join our core platform infrastructure team. Responsible for building responsive web layouts, improving performance architecture, and modern dynamic user interfaces...
+                </p>
+                <div class="job-card-footer">
+                    <button class="btn-apply">Apply Now</button>
+                    <span class="post-date-flag">Posted 1 day ago</span>
+                </div>
+            </article>
+
+            <article class="job-card">
+                <div class="job-card-header">
+                    <div>
+                        <h2 class="job-title">Frontend Developer Internship</h2>
+                        <div class="company-meta">
+                            <span class="company-tag">Quantum Labs</span>
+                            <span class="rating-badge">4.2 ★</span>
+                        </div>
+                        <p class="location-text">Austin, TX (On-site)</p>
+                    </div>
+                </div>
+                <p class="job-snippet">
+                    Kickstart your web engineering career. Learn to write production-ready, clean HTML5/CSS3 modules alongside senior engineering mentors. Apply today!
+                </p>
+                <div class="job-card-footer">
+                    <button class="btn-apply">Apply Now</button>
+                    <span class="post-date-flag">Posted Just now</span>
+                </div>
+            </article>
+
+            <nav class="pagination-controls" aria-label="Pagination">
+                <a href="#" class="page-arrow" aria-label="Previous Page">&laquo;</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-arrow" aria-label="Next Page">&raquo;</a>
+            </nav>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 JobSphere Inc. Inspired by Indeed Clone Specification Blueprint.</p>
+    </footer>
+
+</body>
+</html>
